@@ -5,7 +5,6 @@ import { User } from './users/user.entity';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Article } from './articles/article.entity';
-import { UsersModule } from './users/user.module';
 import { AuthModule } from './auth/auth.module';
 import { ArticlesModule } from './articles/articles.module';
 
@@ -22,7 +21,6 @@ import { ArticlesModule } from './articles/articles.module';
         entities: [User, Article],
         synchronize: true,
       }),
-     UsersModule,
      AuthModule,
      ArticlesModule,
      ArticlesModule,
