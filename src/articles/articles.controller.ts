@@ -58,4 +58,11 @@ export class ArticlesController {
   remove(@Param('id') id: string) {
     return this.articlesService.remove(+id);
   }
+
+
+  @UseGuards(JwtAuthGuard)
+  @Get(':id')
+  getById(@Param('id') id: string) {
+    return this.articlesService.findById(+id);
+  }
 }

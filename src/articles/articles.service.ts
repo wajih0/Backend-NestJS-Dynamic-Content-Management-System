@@ -51,4 +51,10 @@ export class ArticlesService {
 
     return this.articleRepo.remove(article);
   }
+
+   async findById(id: number) {
+    const article = await this.articleRepo.findOne({ where: { id } });
+    if (!article) throw new NotFoundException('Article not found');
+    return article;
+  }
 }

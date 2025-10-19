@@ -12,5 +12,8 @@ export class CreateArticleDto {
   @ApiProperty({ example: 'NestJS is a progressive Node.js framework...', description: 'The content of the article' })
   content: string;
 
+  @IsOptional()
+  @IsBoolean()
+  isPublished?: boolean;
  
 }
