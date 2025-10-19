@@ -38,8 +38,8 @@ This project is a **full-stack web application** built with **NestJS** (backend)
    - Clone , Run `npm install` and `npm run start:dev`
 
 2. **Frontend:**  
-   - Run `npm install` and `npm run dev`  
-   - Access the frontend at `http://localhost:3002`  
+   - Run `npm install` and `npm run dev -- -p 3002`
+   
 
 ---
 
