@@ -2,6 +2,13 @@
 
 This project is a **full-stack web application** built with **NestJS** (backend) and **Next.js** (frontend), featuring a **Dynamic Content Management System** with user authentication and role-based access control.
 
+ Les utilisateurs enregistrés via le frontend /register auront toujours le rôle USER.
+Créer un ADMIN :
+Démarrer le backend.
+Ouvrir Swagger à http://localhost:3000/api.
+Aller dans la section Auth/register selon ton setup.
+Utiliser l’endpoint POST /auth/register  et modifier le rôle à ADMIN directement dans le body.
+
 ## Features
 
 - **User Authentication & Authorization**  
@@ -27,7 +34,7 @@ This project is a **full-stack web application** built with **NestJS** (backend)
 
 - **Backend:** NestJS, TypeORM, PostgreSQL  
 - **Frontend:** Next.js, Tailwind CSS, React
-- **DB:** PostgeSql
+- **DB:** PostgeSql(DB_NAME=postgres) : CREATE DATABASE postgres;
 - **Authentication:** JWT (Access + Refresh tokens)  
 - **Others:** Swagger for API docs, Class-validator for DTO validation
 
