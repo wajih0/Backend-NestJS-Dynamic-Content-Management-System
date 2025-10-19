@@ -6,7 +6,7 @@ This project is a **full-stack web application** built with **NestJS** (backend)
 Créer un ADMIN :
 Démarrer le backend.
 Ouvrir Swagger à http://localhost:3000/api.
-Aller dans la section Auth/register selon ton setup.
+Aller dans la section Auth/register .
 Utiliser l’endpoint POST /auth/register  et modifier le rôle à ADMIN directement dans le body.
 
 ## Features
